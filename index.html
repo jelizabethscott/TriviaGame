@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Pangolin" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <body>
+        <!--Start Screen-->
+        <div class="start">
+            <h1>Random Trivia Mania</h1>
+            <button type="button" onclick="myFunction()" id="button">Start</button>
+        </div>
+        <!--Parent Container-->
+    <div class="box hide">
+        <!--Header-->
+        <div class="header">
+            <h1>Random Triva Mania</h1>
+        </div>
+        <!--Timer-->
+        <div class="timeBox">
+            <h2>Time Remaining: <span id="timer"></span></h2>
+        </div>S
+        <!--Trivia-->
+        <div class="container">
+            <h3>In what year did Anna Wintour become editor-in-chief of Vouge?</h3>
+            <div class="btn-group option-1-container">
+                <input type="radio" id="answer1" name="question1" value="answer">
+                	<label for="answer1">1983</label>
+                <input type="radio" id="answer2" name="question1" value="answer" data-correct="true">
+                	<label for="answer2">1988</label>
+                <input type="radio" id="answer3" name="question1" value="answer">
+                	<label for="answer3">1972</label>
+                <input type="radio" id="answer4" name="question1" value="answer">
+                	<label for="answer4">1969</label>
+            </div>
+            <h3>The correct way to peel a banana is  like a monkey: Turn the banana upside-down and hold by the stem. Pinch the nubby, pointed tip, break the skin and peel back.</h3>
+            <div class="btn-group option-2-container">
+                <input type="radio" id="answer5" name="question2" value="answer" data-correct="true">
+                	<label for="answer5">True</label>
+                <input type="radio" id="answer6" name="question2" value="answer">
+                	<label for="answer6">False</label>
+             </div>
+            <h3>Which Jim Carey movie did this quote come from:
+ 			"There's someone on the wing! Some... THING! I'm sorry, what were you saying?"</h3>
+            <div class="btn-group option-3-container">
+                <input type="radio" id="answer7" name="question3" value="answer">
+                    <label for="answer7">Ace Ventura: Pet Detective</label>
+                <input type="radio" id="answer8" name="question3" value="answer" data-correct="true">
+                    <label for="answer8">Ace Venture: When Nature Calls</label>
+                <input type="radio" id="answer9" name="question3" value="answer">
+                    <label for="answer9">The Mask</label>
+                <input type="radio" id="answer10" name="question3" value="answer">
+                    <label for="answer10">Dumb and Dumber</label>
+            </div>
+            <h3>what year did Madam CJ Walker ivented her line of African-American hair products?</h3>
+            <div class="btn-group option-4-container">
+                <input type="radio" id="answer11" name="question4" value="answer">
+                    <label for="answer11">1900</label>
+                <input type="radio" id="answer12" name="question4" value="answer">
+                    <label for="answer12">1920</label>
+                <input type="radio" id="answer13" name="question4" value="answer">
+                    <label for="answer13">1907</label>
+                <input type="radio" id="answer14" name="question4" value="answer" data-correct="true">
+                    <label for="answer14">1905</label>
+            </div>
+            <h3>Who is Richard Avedon?</h3>
+            <div class="btn-group option-5-container">
+                <input type="radio" id="answer15" name="question5" value="answer">
+                    <label for="answer15">Editor-in-chief of BAZAAR</label>
+                <input type="radio" id="answer16" name="question5" value="answer">
+                    <label for="answer16">Fashion Designer</label>
+                <input type="radio" id="answer17" name="question5" value="answer" data-correct="true">
+                    <label for="answer17">American fashion and portrait photographer</label>
+                <input type="radio" id="answer18" name="question5" value="answer">
+                    <label for="answer18">Ford Model's CEO</label>
+            </div>
+            <h3>Kopi luwak, or civet coffee, is coffee that includes part-digested coffee cherries eaten and defecated by the Asian palm civet.</h3>
+            <div class="btn-group option-6-container">
+                <input type="radio" id="answer19" name="question6" value="answer" data-correct="true">
+                	<label for="answer19">True</label>
+                <input type="radio" id="answer20" name="question6" value="answer">
+                    <label for="answer20">False</label>
+            </div>
+            <h3>Who pioneered the use of photographic film?</h3>
+            <div class="btn-group option-7-container">
+                <input type="radio" id="answer21" name="question7" value="answer" data-corrrect="true">
+                	<label for="answer21">George Eastman</label>
+                <input type="radio" id="answer22" name="question7" value="answer">
+                	<label for="answer22">Louis Daugerre</label>
+                <input type="radio" id="answer23" name="question7" value="answer">
+                	<label for="answer23">Johann Zahn</label>
+                <input type="radio" id="answer24" name="question7" value="answer">
+                	<label for="answer24">Oskar Barnack</label>
+            </div>
+            <h3>Which TV show was Drake on before becoming the artist that he is today?</h3>
+            <div class="btn-group option-8-container">
+                <input type="radio" id="answer25" name="question8" value="answer" data-correct="true">
+                	<label for="answer25">Degrassi</label>
+                <input type="radio" id="answer26" name="question8" value="answer">
+                	<label for="answer26">90210</label>
+                <input type="radio" id="answer27" name="question8" value="answer">
+                	<label for="answer27">Gossip Girl</label>
+                <input type="radio" id="answer28" name="question8" value="answer">
+                	<label for="answer28">Glee</label>
+            </div>
+            <h3>How many books has President Donald Trump Written?</h3>
+            <div class="btn-group option-9-container">
+                <input type="radio" id="answer29" name="question9" value="answer">
+                	<label for="answer29">5</label>
+                <input type="radio" id="answer30" name="question9" value="answer" data-corret="true">
+                	<label for="answer30">9</label>
+                <input type="radio" id="answer31" name="question9" value="answer">
+                	<label for="answer31">1</label>
+                <input type="radio" id="answer32" name="question9" value="answer">
+                	<label for="answer32">2</label>
+            </div>
+            <h3>Which Religion is the oldest in the world?</h3>
+            <div class="btn-group option-10-container">
+                <input type="radio" id="answer33" name="question10" value="answer">
+                	<label for="answer33">Zoroastrianism</label>
+                <input type="radio" id="answer34" name="question10" value="answer">
+                	<label for="answer34">Christianity</label>
+                <input type="radio" id="answer35" name="question10" value="answer" data-correct="true">
+                	<label for="answer35">Hinduism</label>
+                <input type="radio" id="answer36" name="question10" value="answer">
+                	<label for="answer36">Islam</label>
+            </div>
+        </div>
+    </div>
+    <div class="end hide">
+        <h1>Random Triva Mania</h1>
+        <h2>Correct: <span id="yes"></span></h2>
+        <h2>Wrong: <span id="no"></span></h2>
+        <h2>Unanswered: <span id="maybe"></span></h2>
+    </div>
+            <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+
+</html>
