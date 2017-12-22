@@ -1,5 +1,5 @@
 // decaling variables
-var number = 20;
+var number = 10;
   console.log(number);
 
 var intervalId;
@@ -45,28 +45,52 @@ function decrement() {
   var wrong = 0;
   var unasnwered = correct - wrong;
 
+/*$(".btn-group").on("click", function(e) {
+  $(".option-1-container>[name='options1']").attr("disabled", true);
+})
 $(".btn-group").on("click", function(e) {
-  $(".option-1-container>[name='answer1']").attr("disabled", true);
+  $(".option-2-container>[name='options2']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-3-container>[name='options3']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-4-container>[name='options4']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-5-container>[name='options5']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-6-container>[name='options6']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-7-container>[name='options7']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {  
+  $(".option-8-container>[name='options8']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-9-container>[name='options9']").attr("disabled", true);
+})
+$(".btn-group").on("click", function(e) {
+  $(".option-10-container>[name='options10']").attr("disabled", true);
+ })*/
 
-  $(".option-2-container>[name='answer2']").attr("disabled", true);
 
-  $(".option-3-container>[name='answer3']").attr("disabled", true);
-
-  $(".option-4-container>[name='answer4']").attr("disabled", true);
-
-  $(".option-5-container>[name='answer5']").attr("disabled", true);
-
-  $(".option-6-container>[name='answer6']").attr("disabled", true);
-
-  $(".option-7-container>[name='answer7']").attr("disabled", true);
-
-  $(".option-8-container>[name='answer8']").attr("disabled", true);
-
-  $(".option-9-container>[name='answer9']").attr("disabled", true);
-
-  $(".option-10-container>[name='answer10']").attr("disabled", true);
-  })
-
+$(".btn-group").on("click", function(e) {
+  //.log($(this).data("correct", true))
+  $(this).children().attr("disabled", true);
+  //console.log(this);
+    //if ($(this).data("correct", true)) {
+      //var mydata = $( ".option-3-container" ).data("correct" , true);
+      //if (mydata) {
+    if ( $( this).children().data( "correct" ) === true) { 
+    //if ($( "#answer8" ).data( "correct" ) === true) {
+      correct++;
+      $("#yes").html(correct);
+      }
+      //console.log($( "#answer8" ).data( "correct" ));
+});
 
 
 
