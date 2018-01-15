@@ -1,5 +1,5 @@
 // decaling variables
-var seconds = 31;
+var seconds = 121;
   console.log(seconds);
 var intervalId;
 var correct = 0;
